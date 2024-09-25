@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'todos-front-app';
+  todoId1:number=1;
+  todoId2:number=2;
 }

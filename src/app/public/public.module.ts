@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './components/home/home.component';
 import { AllTodosComponent } from './components/all-todos/all-todos.component';
 import { TodoDetailsComponent } from './components/todo-details/todo-details.component';
+import { PublicRoutingModule } from './public-routing.module';
+import { PublicComponent } from './public.component';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -10,10 +13,13 @@ import { TodoDetailsComponent } from './components/todo-details/todo-details.com
   declarations: [
     HomeComponent,
     AllTodosComponent,
-    TodoDetailsComponent
+    TodoDetailsComponent,
+    PublicComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PublicRoutingModule,
+    AppRoutingModule
   ]
 })
 export class PublicModule { }

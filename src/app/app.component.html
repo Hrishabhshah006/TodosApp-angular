@@ -1,1 +1,9 @@
+<div>
+    <a routerLink="/about-us">About Us</a>
+    <a routerLink="/faq">FAQs</a>
+    <a routerLink="/auth/login">Login</a>
+    <a routerLink="/public/all-todos">All Todos</a>
+    <a routerLink="/public/todo-details/{{todoId1}}">Todo Details 1</a>
+    <a [routerLink]="['/public/todo-details/',todoId2]">Todo Details 2</a>
+</div>
 <router-outlet></router-outlet>
